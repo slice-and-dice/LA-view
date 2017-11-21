@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="http://localhost:3000/fbo-type.html">Back to operator type</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+<div class+"form-group">
+      <h1 class="heading-large">
+        Food business operator
+      </h1>
+      <p>
+        A food business operator is the person or company who is responsible for the direction and food safety of this food business.
+      </p>
+</div>
+
+      <h1 class="heading-large">Limited company details</h1>
+<div class="form-group">
+      <label class="form-label" for="fbo-name">Limited company name</label>
+      <input class="form-control" id="fbo-name" type="text" name="fbo-name">
+</div>
+
+<div class="form-group">
+      <label class="form-label" for="fbo-company-number">Limited company number</label>
+      <input class="form-control" id="fbo-company-number" type="text" name="fbo-company-number">
+</div>
+
+<div class="grid-row">
+      <a class="button" href="http://localhost:3000/contact.html" role="button">Save and continue</a>
+</div>
+
+
+</main>
+
+{% endblock %}

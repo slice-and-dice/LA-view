@@ -1,0 +1,61 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="http://localhost:3000/fbo-type.html">Back to operator name</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class+ "form-group">
+        <h1 class="heading-large">
+              Food business operator
+            </h1>
+        <p>
+          A food business operator is the person or company who is responsible for the direction and food safety of this food business.
+        </p>
+      </div>
+
+      <h1 class="heading-large">Operator contact details</h1>
+
+
+<!--					Selectable list with form entry beneath and add more-->
+      <div class="list-item-wrapper-vertical">
+        <div class="grid-row">
+          <div class="form-group-compound">
+
+            <!--				  <div class="form-group contact-input-group">-->
+            <div class="form-group-small contact-type-select">
+              <label class="form-label" for="contact-2">Contact type</label>
+              <!--						<div class="form-group ">-->
+              <!--								<select class="form-control form-title-input" name="contact-1" id="contact-1">-->
+              <select class="form-control" name="contact-1" id="contact-1">
+                        <option disabled="disabled" selected="true"></option>
+                        <option value="1">Mobile telephone</option>
+                        <option value="2">Home telephone</option>
+                        <option value="3">Work telephone</option>
+                        <option value="5">Home email</option>
+                        <option value="7">Text phone</option>
+                        <option value="8">TypeTalk</option>
+                        <option value="11">Other</option>
+                      </select>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="contact-type" id="contact-type" type="numerical"> </div>
+
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="form-group">
+            <button id="add-button" class="button-secondary button-add-another-vertical">Add another</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <a class="button" href="http://localhost:3000/hello.html" role="button">Save and continue</a>
+      </div>
+
+
+</main>
+
+{% endblock %}
