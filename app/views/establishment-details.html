@@ -1,0 +1,48 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div> <a class="back-link" href="/contact.html">Back to contact</a> </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Establishment
+      </h1>
+      <p>
+        The food establishment is the public facing entity.
+      </p>
+
+      <form>
+        <div class="form-group">
+          <fieldset class="inline">
+
+            <legend>
+              <h1 class="heading-medium">
+                    Establishment details
+              </h1>
+            </legend>
+
+            <div class="form-group">
+                  <label class="form-label" for="establishment-name">Establishment name</label>
+                  <input class="form-control" id="establishment-name" type="text" name="establishment-name">
+            </div>
+
+
+            </div>
+            <div class="grid-row">
+              <a id="operator-continue-button" class="button" href="/establishment-address" role="button">Save and continue</a>
+            </div>
+
+
+          </fieldset>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
