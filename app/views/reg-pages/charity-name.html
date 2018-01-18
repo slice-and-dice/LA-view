@@ -1,0 +1,51 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="/fbo-type.html">Back to operator type</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">Charity details</h1>
+      <div class="form-group">
+        <label class="form-label" for="fbo-name">Charity name</label>
+        <input class="form-control" id="fbo-name" type="text" name="fbo-name">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="fbo-company-number">Charity number</label>
+        <input class="form-control" id="fbo-company-number" type="text" name="fbo-company-number">
+      </div>
+
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">Companies House numbers</span></summary>
+          <div class="panel panel-border-narrow">
+            <p class="label"> Every charity which makes over £10,000 in donations each year has to be registered with the Charity Comission, and will have a charity reference number. You can find your charity reference number by visiting the  <a href="http://beta.charitycommission.gov.uk/">Charity register.</a></p>
+          </div>
+        </details>
+      </div>
+
+      <div class="grid-row">
+        <a class="button" href="/contact.html" role="button">Save and continue</a>
+      </div>
+
+
+
+
+      </details>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+</main>
+
+{% endblock %}
