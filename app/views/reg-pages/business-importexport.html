@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
 
 <main id="content" role="main">
-  <div> <a class="back-link" href="/index.html">Back to start</a> </div>
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
 
 
   <div class="grid-row">
@@ -23,7 +23,7 @@
                     <fieldset>
 
                       <legend>
-                        <h3 class="heading-medium">Do you import or export any food?</h3>
+                        <h3 class="heading-medium">Will you import or export any food from outside the UK?</h3>
                         <span class="body-text">Select all that apply</span>
                       </legend>
 
@@ -39,15 +39,31 @@
                         <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
                         <label for="waste-type-3">No import or export activities</label>
                       </div>
+                      <div class="multiple-choice">
+                        <input id="waste-type-4" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+                        <label for="waste-type-4">Don't know</label>
+                      </div>
 
                     </fieldset>
                   </form>
+              </div>
+
+              <div class="form-group">
+                <details>
+                  <summary><span class="summary">More information about import and export activities</span></summary>
+                  <div class="panel panel-border-narrow">
+                    <p class="label"> By law, if you set up a charity you must have applied to register it with the commission if it is a charitable incorporated organisation (CIO) or its annual income is more than £5,000, unless it is a specific type of charity that doesn’t have to register. The commission will take action to secure compliance if it identifies a charity which isn’t registered but should be.
+                    </p>
+
+                    <p>If your charity isn’t a CIO and your income is under £5,000 you don’t have to register with the commission. You can find your charity reference number by visiting the  <a href="http://beta.charitycommission.gov.uk/">Charity register.</a></p>
+                  </div>
+                </details>
               </div>
             </form>
 
             </diov>
             <div class="grid-row">
-              <a id="operator-continue-button" class="button" href="/name" role="button">Save and continue</a>
+              <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
             </div>
 
 

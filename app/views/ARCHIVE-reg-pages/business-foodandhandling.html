@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
 
 <main id="content" role="main">
-  <div> <a class="back-link" href="./index.html">Back</a> </div>
+  <div> <a class="back-link" href="/index.html">Back to start</a> </div>
 
 
   <div class="grid-row">
@@ -23,17 +23,29 @@
                     <fieldset>
 
                       <legend>
-                        <h3 class="heading-medium">Who will this establishment supply food to?</h3>
+                        <h3 class="heading-medium">What kind of activites do you do?</h3>
                         <span class="body-text">Select all that apply</span>
                       </legend>
 
                       <div class="multiple-choice">
                         <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
-                        <label for="waste-type-1">It will supply food to other businesses</label>
+                        <label for="waste-type-1">Store food at room temperature for retail.
+                          <span class="form-hint">For example storage and sale of pre-packaged sandwiches and crisps.</span>
+                        </label>
                       </div>
+
                       <div class="multiple-choice">
                         <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
-                        <label for="waste-type-2">It will supply food directly to end consumers</label>
+                        <label for="waste-type-2">Preparation, cooking and handling of open food to be served to customers.
+                          <span class="form-hint">For example a restaurant, cafe or coffee shop serving sandwiches.</span>
+                        </label>
+                      </div>
+
+                      <div class="multiple-choice">
+                        <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-mines">
+                        <label for="waste-type-3">Preparing and selling chilled or room temperature re-wrapped and re-packaged food.
+                          <span class="form-hint">For example production of ready-to-eat meals.</span>
+                        </label>
                       </div>
 
                     </fieldset>
@@ -43,7 +55,7 @@
 
             </diov>
             <div class="grid-row">
-              <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
+              <a id="operator-continue-button" class="button" href="/name" role="button">Save and continue</a>
             </div>
 
 
