@@ -1,0 +1,204 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+<h2 class="heading-medium">
+   Please check that the details you entered are correct before submitting your registration.
+</h2>
+
+<!--Name Details table-->
+
+<form>
+<fieldset>
+
+
+
+  <!--Operator details-->
+  <table>
+    <tbody>
+      <tr>
+        <td class="bold">Operator details</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Registration type</td>
+        <td class="bold">
+          <div>New</div>
+          <div>Update</div>
+          <div>Closure</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+        <td class="bold">[First and middle names] [Last name]</td>
+      </tr>
+
+      <tr>
+        <td>Operator type</td>
+        <td class="bold">
+          <div>Sole trader</div>
+          <div>Partnership</div>
+          <div>Charity</div>
+          <div>Limited company</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Operator home address</td>
+        <td class="bold">
+          <div>Line 1</div>
+          <div>Line 2</div>
+          <div>Line 3</div>
+          <div>Postcode</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Contact number</td>
+        <td class="bold">
+          <div>[Operator phone number]</div>
+          <div>
+            <label class="form-hint-small">[Contact type]</label>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Email address</td>
+        <td class="bold">[email address]</td>
+      </tr>
+
+
+
+      <!--Establishment details-->
+
+      <tr>
+        <td class="bold">Establishment details</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Establishment name</td>
+        <td class="bold">[Establishment-name answer]</td>
+      </tr>
+
+      <tr>
+        <td>Establishment address</td>
+        <td class="bold">
+          <div>[Line 1]</div>
+          <div>[Line 2]</div>
+          <div>[Postcode]</div>
+        </td>
+      </tr>
+      <tr>
+        <td>Domestic premesis</td>
+        <td class="bold">[establishment-details]</td>
+      </tr>
+      <tr>
+        <td>Establishment email address</td>
+        <td class="bold">[establishment email address]</td>
+      </tr>
+      <tr>
+        <td>Establishment phone number</td>
+        <td class="bold">[establishment phone number]</td>
+      </tr>
+      <tr>
+        <td>Opened on</td>
+        <td class="bold">[Opening date past or future]</td>
+      </tr>
+
+
+      <!--Food activities-->
+      <tr>
+        <td class="bold">Food activities</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Customer type</td>
+        <td>
+          <div>Serves to</div>
+          <div class="bold">End consumers</div>
+          <div class="bold">Other businesses</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Importing and Exporting</td>
+        <td class="bold">
+          <div>Importing only</div>
+          <div>Exporting only</div>
+          <div>Importing and exporting</div>
+          <div>None</div>
+          <div>Don't know</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Business type</td>
+        <td class="bold">[business-consumerfacing answer]</td>
+      </tr>
+
+      <tr>
+        <td>Food activities</td>
+        <td class="bold">
+          <div>Open food</div>
+          <div>Re-wrapping and re-packing</div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>Description of food business</td>
+        <td class="bold">
+          <div>[business-otherdetail answer]</div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+</fieldset>
+</form>
+
+<!--Declaration	-->
+
+<div class="form-group">
+<h2 class="heading-medium">
+   Declaration
+</h2>
+
+<p>I declare that the information I have given on this form is correct and complete to the best of my knowledge and belief.</p>
+<p>I will notify food authorities of any changes to the business, including closure, within 28 days of the change happening.</p>
+
+<p class="heading-medium">Please tick the box below to make the declaration</p>
+
+
+      <div class="multiple-choice">
+        <input id="radio-1" type="checkbox" name="radio-group" value="Northern Ireland">
+        <label for="radio-1">I agree </label>
+      </div>
+</div>
+
+<!--Continue Button         -->
+<div class="form-group">
+      <div class="grid-row">
+        <a id="operator-continue-button" class="button" href="./index" role="button">Submit registration</a>
+      </div>
+</div>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
