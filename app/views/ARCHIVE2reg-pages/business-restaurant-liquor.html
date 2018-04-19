@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
 
 <main id="content" role="main">
-  <div> <a class="back-link" href="./index.html">Back</a> </div>
+  <div> <a class="back-link" href="/index.html">Back to start</a> </div>
 
 
   <div class="grid-row">
@@ -16,29 +16,28 @@
               <div class="form-group">
 
                 <h1 class="heading-large">
-                  Business activities
+                  Restaurant, pub or cafe
                 </h1>
                 <fieldset>
                   <form>
                     <fieldset>
 
                       <legend>
-                        <h3 class="heading-medium">What kind of activites will this food establishment do?</h3>
+                        <h3 class="heading-medium">Does your business do any of these activities relating to liquor production? </h3>
                         <span class="body-text">Select all that apply</span>
                       </legend>
 
                       <div class="multiple-choice">
-                        <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-mines">
-                        <label for="waste-type-1">Handling, preparation and cooking of open food to be served to customers.
-                          <span class="form-hint">For example a restaurant, cafe or coffee shop serving freshly prepared food.</span>
-                        </label>
+                        <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+                        <label for="waste-type-1">Selling micro-brewed beers and ales to other food businesses</label>
                       </div>
-
                       <div class="multiple-choice">
                         <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
-                        <label for="waste-type-2">Re-wrapping or re-packaging chilled, frozen or room temperature foods to be sold to customers.
-                          <span class="form-hint">For example re-packing pre-made sandwiches, re-packing sweets etc.</span>
-                        </label>
+                        <label for="waste-type-2">Making your own liquor or spirits</label>
+                      </div>
+                      <div class="multiple-choice">
+                        <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+                        <label for="waste-type-3">None of these activities</label>
                       </div>
 
                     </fieldset>
@@ -48,7 +47,7 @@
 
             </diov>
             <div class="grid-row">
-              <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
+              <a id="operator-continue-button" class="button" href="/name" role="button">Save and continue</a>
             </div>
 
 
