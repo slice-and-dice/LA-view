@@ -1,7 +1,7 @@
 {% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
 
 <main id="content" role="main">
-  <div> <a class="back-link" href="/index.html">Back to start</a> </div>
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
 
 
   <div class="grid-row">
@@ -23,30 +23,31 @@
                     <fieldset>
 
                       <legend>
-                        <h3 class="heading-medium">Does your business do any of these activities relating to meat and fish? </h3>
+                        <h3 class="heading-medium">Which activities will this establishment do relating to meat and fish? </h3>
                         <span class="body-text">Select all that apply</span>
                       </legend>
 
                       <div class="multiple-choice">
+                        <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+                        <label for="waste-type-2">Prepare and serve raw fish. For example sushi</label>
+                      </div>
+                      <div class="multiple-choice">
                         <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
-                        <label for="waste-type-1">Meat tartare</label>
+                        <label for="waste-type-1">Serve raw meat. For example meat tartare</label>
                       </div>
                       <div class="multiple-choice">
                         <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
-                        <label for="waste-type-2">Undercooked meat. For example rare burgers</label>
+                        <label for="waste-type-2">Serve undercooked meat. For example rare burgers</label>
                       </div>
                       <div class="multiple-choice">
                         <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
-                        <label for="waste-type-3">Preparing and serving mussels</label>
+                        <label for="waste-type-3">Prepare and serving mussels</label>
                       </div>
                       <div class="multiple-choice">
                         <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
-                        <label for="waste-type-1">Preparing and serving oysters</label>
+                        <label for="waste-type-1">Prepare and serve oysters</label>
                       </div>
-                      <div class="multiple-choice">
-                        <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
-                        <label for="waste-type-2">Preparing and serving raw fish. For example sushi</label>
-                      </div>
+
                       <div class="multiple-choice">
                         <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
                         <label for="waste-type-3">None of these activities</label>
@@ -59,7 +60,7 @@
 
             </diov>
             <div class="grid-row">
-              <a id="operator-continue-button" class="button" href="/name" role="button">Save and continue</a>
+              <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
             </div>
 
 
