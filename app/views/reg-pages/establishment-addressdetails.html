@@ -8,52 +8,47 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        Establishment address
+        Address details
       </h1>
 
+<!--		Establishment dropdown-->
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">What is an establishment?</span></summary>
+          <div class="panel panel-border-narrow">
+            <p class="label">An establishment is the location of your food business. If it is a mobile food business, please use the location where it is normally stored overnight.
+              <p>
+          </div>
+        </details>
+      </div>
+
   <!--		Domestic premesis-->
-  <form>
-    <div class="form-group">
-      <fieldset>
-
-        <legend>
-          <h1 class="heading-medium">Is this establishment located inside a domestic premesis?</h1>
-        </legend>
-        <p class="form-hint">
-          A domestic premesis is any premesis which is not a place of business. For example, a home.
-        </p>
-
-        <div class="multiple-choice">
-          <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
-          <label for="radio-1">Yes, it is a domestic premesis</label>
-        </div>
-        <div class="multiple-choice">
-          <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
-          <label for="radio-2">No, it is a business or public premesis</label>
-        </div>
-
-      </fieldset>
-    </div>
-  </form>
 
   <form>
     <div class="form-group">
       <fieldset>
 
         <legend>
-          <h1 class="heading-medium">Is this establishment located inside a secure government facility?</h1>
+          <label class="heading-medium">What kind of building is the establishment?</label>
         </legend>
-        <p class="form-hint">
-          Secure facilities require visitors to arrange special legal access the building? For example a prison.
-        </p>
+
+        <div class="big-gap">
+        </div>
 
         <div class="multiple-choice">
+          <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+          <label for="radio-2">Home or domestic premesis</label>
+        </div>
+        <div class="multiple-choice">
           <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
-          <label for="radio-1">Yes</label>
+          <label for="radio-1">Secure government facility
+          <span class="form-hint">
+            Secure facilities require visitors to arrange special legal access the building? For example a prison.
+          </span></label>
         </div>
         <div class="multiple-choice">
           <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
-          <label for="radio-2">No</label>
+          <label for="radio-2">Mobile or moveable establishment</label>
         </div>
 
       </fieldset>
