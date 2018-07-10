@@ -1,0 +1,75 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="form-group">
+
+        <legend>
+          <h1 class="heading-large">What is the operator's address?</h1>
+        </legend>
+
+        <div class="form-group">
+          <details>
+            <summary><span class="summary">What is a food business operator</span></summary>
+            <div class="panel panel-border-narrow">
+              <p class="label"> A food business operator is the person, charity or company who makes the decisions about the food business, what it serves and how it operates.
+                <p>
+            </div>
+          </details>
+        </div>
+
+
+        <!--Correct code-->
+
+        <div class="form-group">
+          <label class="form-label" for="fbo-first-name">Building and street</label>
+          <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
+
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+
+          <div class="form-group">
+            <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
+
+            <div class="big-gap"></div>
+            <div class="big-gap"></div>
+
+            <div class="form-group">
+              <label class="form-label" for="fbo-first-name">Town or city</label>
+              <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
+
+              <div class="big-gap"></div>
+              <div class="big-gap"></div>
+
+              <div class="form-group">
+                <label class="form-label" for="fbo-first-name">County</label>
+                <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
+
+                <div class="big-gap"></div>
+                <div class="big-gap"></div>
+
+                <div class="form-group">
+                  <label class="form-label" for="fbo-first-name">Postcode</label>
+                  <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
+
+                  <div class="big-gap"></div>
+                  <div class="big-gap"></div>
+                  <div class="big-gap"></div>
+                  <div class="big-gap"></div>
+
+
+
+        <div class="grid-row">
+          <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
+        </div>
+
+      </div>
+    </div>
+
+</main>
+
+{% endblock %}
