@@ -1,0 +1,101 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div> <a class="back-link" href="/contact.html">Back to establishment name</a> </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Establishment address
+      </h1>
+    <!--Correct code-->
+    <div class="form-group">
+      <div class="form-group">
+        <label for="postcode"> <span class="form-label">Postcode</span> </label>
+        <input class="form-control" name="postcode" id="postcode" type="text" autofocus> </div>
+      <div class="form-group">
+        <label for="first-line"> <span class="form-label">Building name or number (optional)</span> </label>
+        <input class="form-control" name="first-line" id="first-line" type="text"> </div>
+      <!--		Continue button-->
+    </div> <a class="button" href="#" role="button">Find address</a> </div>
+  <div class="form-group">
+    <div class="big-gap"> </div>
+  </div>
+
+  <!--		Domestic premesis-->
+  <form>
+    <div class="form-group">
+      <fieldset>
+
+        <legend>
+          <h1 class="heading-medium">Is this address a domestic premesis?</h1>
+        </legend>
+        <p>
+          A domestic premesis is any premesis which is not a place of business. For example, a home.
+        </p>
+
+        <div class="multiple-choice">
+          <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+          <label for="radio-1">Yes, it is a domestic premesis</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+          <label for="radio-2">No, it is a business or public premesis</label>
+        </div>
+
+      </fieldset>
+    </div>
+  </form>
+
+
+  <!--No address information			-->
+  <div class="form-group">
+    <details>
+      <summary><span class="summary">I don't know the address of this establishment</span></summary>
+      <div class="panel panel-border-narrow">
+
+        <form>
+          <div class="form-group">
+            <fieldset>
+
+              <div class="multiple-choice">
+                <input id="radio-1" type="radio" name="radio-group" value="no-address">
+                <label for="radio-1">I don't know the address yet</label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-2" type="radio" name="radio-group" value="no-postal-address">
+                <label for="radio-2">This establishment has no postal address eg. mobile food van </label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-3" type="radio" name="radio-group" value="I do not have this information">
+                <label for="radio-3">I do not have this information</label>
+              </div>
+
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </details>
+  </div>
+
+  </div>
+
+  </div>
+  <div class="grid-row">
+    <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
+  </div>
+
+
+  </fieldset>
+  </div>
+  </form>
+
+
+  </div>
+  </div>
+
+</main>
+
+{% endblock %}

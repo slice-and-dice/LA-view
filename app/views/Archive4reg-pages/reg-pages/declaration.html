@@ -1,0 +1,61 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div>
+    <a class="back-link" href="./index.html">Back</a>
+  </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">
+        Declaration
+      </h2>
+
+      <p>
+        Review these statements and tick all three boxes to agree.
+      </p>
+
+
+      <!--Declaration	-->
+
+      <div class="form-group">
+
+
+        <div class="multiple-choice">
+          <input id="radio-1" type="checkbox" name="radio-group" value="Northern Ireland">
+          <label for="radio-1">I declare that the information I have given on this form is correct and complete to the best of my knowledge and
+            belief.
+          </label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-2" type="checkbox" name="radio-group" value="Northern Ireland">
+          <label for="radio-2">The operator will notify their local council of any significant changes to the business activity, including closure,
+            within 28 days of the change happening.
+            <span class "form-hint">
+          </label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-2" type="checkbox" name="radio-group" value="Northern Ireland">
+          <label for="radio-2">The operator understands they are legally responsible for the safety and authenticity of the food being produced
+            or served at this establishment.
+            <span class "form-hint">
+          </label>
+        </div>
+      </div>
+
+
+      <!--Continue Button         -->
+      <div class="form-group">
+        <div class="grid-row">
+          <a id="operator-continue-button" class="button" href="./index" role="button">Submit registration</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

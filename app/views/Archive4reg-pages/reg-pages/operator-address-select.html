@@ -1,0 +1,81 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div>
+    <a class="back-link" href="./index.html">Back</a>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="form-group">
+
+        <legend>
+          <h1 class="heading-large">What is the operator's address?</h1>
+        </legend>
+
+        <div class="form-group">
+          <label class="form-hint" for="fbo-name">
+            <p>Operator address is the contact address for the operator. For example home address for a sole trader or headquarters
+              address for a limited company.</p>
+          </label>
+
+          <div class="form-group">
+            <details>
+              <summary>
+                <span class="summary">What is a food business operator</span>
+              </summary>
+              <div class="panel panel-border-narrow">
+                <p class="label"> A food business operator is the person, charity or company who makes the decisions about the food business,
+                  what it serves and how it operates.
+                  <p>
+              </div>
+            </details>
+          </div>
+
+
+          <!--Correct code-->
+
+          <h2 class="heading-medium">Postcode</h2>
+          <p class="bold">SW12 1UP
+            <a href="">Change</a>
+          </p>
+
+          <h2 class="heading-medium">Select an address</h2>
+          <div class="form-group-small contact-type-select">
+            <!--						<div class="form-group ">-->
+            <!--								<select class="form-control form-title-input" name="contact-1" id="contact-1">-->
+            <select class="form-control" name="contact-1" id="contact-1">
+              <option value="1">Flat 1, Ivanhoe House, London, SW12 1UP</option>
+              <option value="2">Flat 2, Ivanhoe House, London, SW12 1UP</option>
+              <option value="3">Flat 3, Ivanhoe House, London, SW12 1UP</option>
+              <option value="4">Flat 4, Ivanhoe House, London, SW12 1UP</option>
+              <option value="5">Unit 1, Ivanhoe House, London, SW12 1UP</option>
+              <option value="6">Unit 2, Ivanhoe House, London, SW12 1UP</option>
+              <option value="7">Unit 3, Ivanhoe House, London, SW12 1UP</option>
+            </select>
+          </div>
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+          <a href="">I can't find my address in the list</a>
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+          <div class="big-gap"></div>
+
+
+
+
+          <div class="grid-row">
+            <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
+          </div>
+
+        </div>
+      </div>
+
+</main>
+
+{% endblock %}

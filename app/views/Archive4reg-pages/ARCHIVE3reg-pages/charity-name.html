@@ -1,0 +1,49 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">Details of the operating charity</h1>
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">What is a food business operator</span></summary>
+          <div class="panel panel-border-narrow">
+            <p class="label"> A food business operator is the person, charity or company who makes the decisions about the food business, what it serves and how it operates.
+              <p>
+          </div>
+        </details>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="fbo-name">Charity name</label>
+        <input class="form-control" id="fbo-name" type="text" name="fbo-name">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="fbo-company-number">Charity reference number</label>
+        <input class="form-control" id="fbo-company-number" type="text" name="fbo-company-number">
+      </div>
+
+      <div class="grid-row">
+        <a class="button" href="./index.html" role="button">Save and continue</a>
+      </div>
+
+      </details>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+</main>
+
+{% endblock %}

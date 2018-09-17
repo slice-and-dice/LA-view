@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">What kind of food business are you registering?</h1>
+
+      <div class="form-group">
+        <label class="form-hint" for="fbo-name">
+          <ul>
+          <li>For example:</li>
+            <li>Cafe</li>
+            <li>Food delivery service</li>
+            <li>Commerical bakery</li>
+            <li>Beef jerky manufacturer</li>
+          </ul>
+        </label>
+
+         <div class="big-gap">
+         </div>
+         <div class="big-gap">
+         </div>
+
+        <input class="form-control" id="fbo-name" type="text" name="fbo-name">
+      </div>
+
+      <div class="grid-row">
+        <a class="button" href="./index.html" role="button">Save and continue</a>
+      </div>
+
+      </details>
+    </div>
+
+  </div>
+  </div>
+
+</main>
+
+{% endblock %}

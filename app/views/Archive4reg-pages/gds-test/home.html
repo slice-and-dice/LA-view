@@ -1,0 +1,89 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+
+
+  <div class="form-group">
+    <h1 class="heading-xlarge">
+              GDS testing pages
+            </h1>
+  </div>
+
+
+<!--Opening date-->
+  <div class="form-group">
+    <h1 class="heading-large">
+    Opening date
+  </h1>
+    <p>
+      Inputting the opening date for the food business
+    </p>
+    <div>
+          <a class="button" href="/gds-test/select-date-v1" role="button">Opening date</a>
+    </div>
+  </div>
+
+<hr>
+</hr>
+
+
+  <!--Confirm submission-->
+    <div class="form-group">
+      <h1 class="heading-large">
+      Confirm submission
+    </h1>
+      <p>
+        Upon completing the food business registration, the user is shown a confirmation message informing them that the registration has successfully been submitted.
+      </p>
+      <div>
+            <a class="button" href="/gds-test/confirm-submission-v1" role="button">Confirm submission</a>
+      </div>
+    </div>
+    <hr>
+    </hr>
+
+
+    <!--Errors and validation-->
+      <div class="form-group">
+        <h1 class="heading-large">
+        Errors and validation
+      </h1>
+        <p>
+          In-line validation and error messages shown during input.
+        </p>
+        <div>
+              <a class="button" href="/gds-test/errors-validation.html" role="button">Errors and validation</a>
+        </div>
+      </div>
+      <hr>
+      </hr>
+
+
+      <!--Independant FBO chain-->
+        <div class="form-group">
+          <h1 class="heading-large">
+          Search as you type
+        </h1>
+          <p>
+            Example of the search as you type component demoed by GDS.
+          </p>
+          <div>
+                <p><a class="button" href="https://govuk-location-picker-demo.herokuapp.com/country-of-birth" role="button" target="empty">GDS Search as you type component</a>
+                </p>  
+                <p>Find out more information by <a href="https://designnotes.blog.gov.uk/2017/04/20/were-building-an-autocomplete/"  target="empty"> visiting the component page on the GDS blog</a>.
+                </p>
+
+          </div>
+        </div>
+        <hr>
+        </hr>
+
+
+
+
+
+
+</main>
+
+{% endblock %}

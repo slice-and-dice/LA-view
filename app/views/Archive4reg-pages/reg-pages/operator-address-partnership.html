@@ -1,0 +1,64 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div>
+    <a class="back-link" href="./index.html">Back</a>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="form-group">
+
+        <legend>
+          <h1 class="heading-large">Operator address</h1>
+        </legend>
+
+        <div class="form-group">
+
+
+
+          <div class="form-group">
+            <details>
+              <summary>
+                <span class="summary">What is a food business operator</span>
+              </summary>
+              <div class="panel panel-border-narrow">
+                <p class="label"> A food business operator is the person, charity or company who makes the decisions about the food business, what it serves and how it operates.
+                  <p>
+              </div>
+            </details>
+          </div>
+
+          <div class="form-group">
+            <label>
+            <p>
+              The operator address will be the designated contact address for the whole partnership. This may be the home address of a nominated person in the partnership, or the address of a legal representative for the partnership.</p>
+          </label>
+          </div>
+
+
+
+          <!--Correct code-->
+
+          <div class="form-group">
+            <label class="form-label" for="fbo-surname">Postcode</label>
+            <input class="form-control" id="fbo-surname" type="text" name="fbo-surname">
+            <div class="big-gap"></div>
+            <div class="big-gap"></div>
+            <div class="big-gap"></div>
+
+            <div>
+              <a class="button" href="#" role="button">Find address</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+</main>
+
+{% endblock %}

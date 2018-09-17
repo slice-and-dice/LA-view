@@ -1,0 +1,71 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
+
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <form>
+        <div class="form-group">
+          <fieldset>
+
+            <form>
+              <div class="form-group">
+                <fieldset>
+
+                  <legend>
+                    <h1 class="heading-large">Who operates this business?</h1>
+                  </legend>
+
+                  <div class="form-group">
+                    <details>
+                      <summary><span class="summary">What is a food business operator</span></summary>
+                      <div class="panel panel-border-narrow">
+                        <p class="label"> The food business operator is the person, charity or company who makes the decisions about the food business, what it serves and how it operates.<p>
+                      </div>
+                    </details>
+                  </div>
+
+                    <div class="multiple-choice">
+                      <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+                      <label for="radio-1">A person
+                      <span class="form-hint">The food business is owned or operated by an individual person, rather than any legal entity such as a business or charity.</span>
+                    </label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+                      <label for="radio-2">A company
+                      <span class="form-hint">The food business is owned or operated by a limited company rather than a single person or partnership of people.</span>
+                  </label>
+                    </div>
+                    <div class="multiple-choice">
+                      <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+                      <label for="radio-3">A charity
+                        <span class="form-hint">The food business is owned or operated by a charity rather than a company, person or partnership of people.</span>
+                    </label>
+                    </div>
+
+                </fieldset>
+                </div>
+            </form>
+
+
+            </diov>
+            <div class="grid-row">
+              <a id="operator-continue-button" class="button" href="./index" role="button">Save and continue</a>
+            </div>
+
+
+          </fieldset>
+          </div>
+      </form>
+
+
+      </div>
+    </div>
+</main>
+
+{% endblock %}

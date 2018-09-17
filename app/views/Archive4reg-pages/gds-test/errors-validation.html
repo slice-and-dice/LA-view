@@ -1,0 +1,142 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+
+  <div class="form-group">
+    <h1 class="heading-xlarge">
+      Submission confirmation
+    </h1>
+    <div>
+
+
+
+      <!--Select opening date-->
+
+      <div class="form-group">
+        <form>
+
+          <h1 class="heading-large">
+            Phone number validation
+          </h1>
+          <div class="form-group form-group-error">
+
+            <label for="phone-number" id="error-phone-number">
+
+                <span class="form-label-bold">Establishment phone number</span>
+                <span class="form-hint">Used in the event of a phone number containing an alphabet character</span>
+                <span class="error-message">Phone numbers must only contain numbers, not letters</span>
+
+            </label>
+
+                <input class="form-control form-control-error" id="error-phone-number" type="text" name="fullName" value="">
+          </div>
+
+
+          <div class="form-group form-group-error">
+
+            <label for="phone-number" id="error-phone-number-2">
+
+                <span class="form-label-bold">Establishment phone number</span>
+                <span class="form-hint">Used in the event of a phone number not having a valid number of characters</span>
+                <span class="error-message">Phone numbers must contain either 10 or 11 numbers</span>
+
+            </label>
+
+                <input class="form-control form-control-error" id="error-phone-number-2" type="text" name="fullName" value="">
+          </div>
+
+
+          <h1 class="heading-large">
+            Email address validation
+          </h1>
+          <div class="form-group form-group-error">
+
+            <label for="phone-number" id="error-email-1">
+
+                <span class="form-label-bold">Email address</span>
+                <span class="form-hint">Used in the event of an email address not containing valid characters</span>
+                <span class="error-message">Email addresses must contain only numbers or letters, no special characters. For example <em>kiran&#64;email.com</em></span>
+
+            </label>
+
+                <input class="form-control form-control-error" id="error-email-1" type="text" name="fullName" value="">
+          </div>
+
+          <div class="form-group form-group-error">
+
+            <label for="phone-number" id="error-email-2">
+
+                <span class="form-label-bold">Email address</span>
+                <span class="form-hint">Used in the event of an email address missing an &#64; symbol</span>
+                <span class="error-message">Email addresses must an &#64; symbol. For example <em>jenny&#64;email.com</em></span>
+
+            </label>
+
+                <input class="form-control form-control-error" id="error-email-2" type="text" name="fullName" value="">
+          </div>
+
+
+
+
+          <h1 class="heading-large">
+            Dates validation
+          </h1>
+          <div class="form-group form-group-error">
+
+            <label for="phone-number" id="error-opening-date">
+
+                <span class="form-label-bold">When will your busiess begin trading?</span>
+                <span class="form-hint">Used in the event of an opening date being more than 90 days from registration date</span>
+                <span class="error-message">You are only required to register a food business 28 days before beginning to trade. Are you sure this date is correct?</span>
+
+            </label>
+
+                <input class="form-control form-control-error" id="error-opening-date" type="text" name="fullName" value="">
+          </div>
+
+
+          <h1 class="heading-large">
+            Mandatory data
+          </h1>
+          <div class="form-group form-group-error">
+
+            <label for="phone-number" id="error-mandatory-data">
+
+                <span class="form-label-bold">What is your answer?</span>
+                <span class="form-hint">Used in the event of a mandatory question not being answered</span>
+                <span class="error-message">You must answer this question.</span>
+
+            </label>
+
+                <input class="form-control form-control-error" id="error-mandatory-data" type="text" name="fullName" value="">
+          </div>
+
+
+
+
+
+
+        </form>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</main>
+
+{% endblock %}
