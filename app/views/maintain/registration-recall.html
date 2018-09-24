@@ -1,0 +1,62 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div>
+    <a class="back-link" href="./index.html">Back</a>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+      <h1 class="heading-large">Company details</h1>
+      <div class="form-group">
+        <label class="form-label" for="fbo-name">Food business registration reference
+          <span class="form-hint">This will be in your registration confirmation email, or your Local Council will be able to help you find it.</span>
+        </label>
+        <input class="form-control" id="fbo-name" type="text" name="fbo-name">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="fbo-company-number">Operator email address
+          <span class="form-hint">The email address used for the operator when this food business was registered. This will also be o your registration confirmation email.</span>
+        </label>
+        <input class="form-control" id="fbo-company-number" type="text" name="fbo-company-number">
+      </div>
+
+      <div class="form-group">
+        <details>
+          <summary>
+            <span class="summary">I don't know my registration reference number or email address</span>
+          </summary>
+          <div class="panel panel-border-narrow">
+            <p class="label"> Every limited company has to be registered with Companies House, and will have a company reference number. You
+              can find your company reference number by visiting the
+              <a href="https://beta.companieshouse.gov.uk/">Companies House website.</a>
+            </p>
+          </div>
+        </details>
+      </div>
+
+      <div class="grid-row">
+        <a class="button" href="./registration-select.html" role="button">Continue</a>
+      </div>
+
+
+
+
+      </details>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+</main>
+
+{% endblock %}
