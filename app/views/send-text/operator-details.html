@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="form-group">
+        <h1 class="heading-large">
+        Operator details
+      </h1>
+
+        <div class="form-group">
+          <label class="form-label" for="first-name-2">Name</label>
+          <span class="form-hint">We use this to address the text message. A first name, or the name of a representative at the company will work.</span>
+          </label>
+          <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+        </div>
+
+        <div class="big-gap"></div>
+        <div class="big-gap"></div>
+
+        <div class="form-group">
+          <label class="form-label" for="first-name-2">Mobile phone number</label>
+          <span class="form-hint">The phone number the text will go to.</span>
+          </label>
+          <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+        </div>
+
+        <div class="big-gap"></div>
+
+      </div>
+
+      <div class="form-group">
+        <div class="grid-row">
+          <a id="operator-continue-button" class="button" href="./establishment-details" role="button">Continue</a>
+        </div>
+      </div>
+
+</main>
+
+{% endblock %}

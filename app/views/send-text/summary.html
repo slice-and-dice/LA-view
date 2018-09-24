@@ -1,0 +1,65 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="./establishment-details.html">Back</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="form-group">
+      <h1 class="heading-large">
+        Summary
+      </h1>
+
+      <form>
+        <fieldset>
+
+
+
+          <!--Operator details-->
+          <table>
+            <tbody>
+              <tr>
+                <td>Name</td>
+                <td class="bold">Jamie McKinnon</td>
+              </tr>
+
+              <tr>
+                <td>Phone number</td>
+                <td class="bold">07783 765345</td>
+              </tr>
+
+              <tr>
+                <td>Est postcode</td>
+                <td class="bold">SA45 8PD</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </fieldset>
+      </form>
+
+        <div class="big-gap"></div>
+        <div class="big-gap"></div>
+
+      <div class="multiple-choice">
+        <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+        <label for="waste-type-2">I have checked these details are correct</label>
+      </div>
+
+
+
+      <div class="big-gap"></div>
+
+      </div>
+
+      <div class="form-group">
+        <div class="grid-row">
+          <a id="operator-continue-button" class="button" href="./confirmation" role="button">Send message</a>
+        </div>
+      </div>
+
+</main>
+
+{% endblock %}
