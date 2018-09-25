@@ -20,24 +20,33 @@
                     <fieldset>
 
                       <legend>
-                        <h1 class="heading-large">When will this establishment be open?</h1>
+                        <h1 class="heading-large">Opening times</h1>
                         <div class="big-gap"></div>
 
                       </legend>
-
                       <div class="form-group">
-                        <label class="form-label" for="fbo-first-name">Monday opening hours</label>
-                        <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
+                        <label class="form-hint" for="fbo-name">
+                        <ul>
+                        <li>The opening time options are:</li>
+                          <li>24 hours</li>
+                          <li>Daytime only</li>
+                          <li>Afternoon and evening</li>
+                          <li>Evening only</li>
+                        </ul>
+                      </label>
                       </div>
 
                       <div class="form-group">
-                        <label class="form-label" for="fbo-first-name">Thursday opening hours</label>
-                        <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
-                      </div>
+                        <div class="multiple-choice">
+                          <input id="waste-type-1" name="waste-types" type="radio" value="waste-animal">
+                          <label for="waste-type-1">Same times each day</label>
+                        </div>
 
-                      <div class="form-group">
-                        <label class="form-label" for="fbo-first-name">Friday opening hours</label>
-                        <input class="form-control" id="fbo-first-name" type="text" name="fbo-first-name">
+                        <div class="multiple-choice">
+                          <input id="waste-type-2" name="waste-types" type="radio" value="waste-mines">
+                          <label for="waste-type-2">Different times</label>
+                        </div>
+
                       </div>
 
 
@@ -47,12 +56,12 @@
 
               <div class="big-gap"></div>
 
-              
+
             </form>
 
             </diov>
             <div class="grid-row">
-              <a id="operator-continue-button" class="button" href="./index" role="button">Save</a>
+              <a id="operator-continue-button" class="button" href="./index" role="button">Continue</a>
             </div>
 
 
