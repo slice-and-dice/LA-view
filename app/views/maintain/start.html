@@ -1,51 +1,107 @@
 {% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
 
 <main id="content" role="main">
-  <div> <a class="back-link" href="./index.html">Back to start</a> </div>
+    <div> <a class="back-link" href="./index.html">Back to start</a> </div>
 
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-      <h1 class="heading-large">
-        Update a food business record
-      </h1>
-      <p>
-        You can use this service to update your food business registration.
-      </p>
-
-        <p>
-          If you registered using a paper form, a PDF or an online form from your Local Council, you may be asked to provide extra information about the activities taking place in this establishment.
-        </p>
-
-        <p class="heading-small">
-            In order to update your registration, you will need
-        </p>
-        <ul class="list-bullet">
-          <li>Food business registration number</li>
-          <li>Operator email address</li>
-          <li>or the operator phone number</li>
-
-
-      <form>
-        <div class="form-group">
-          <fieldset>
-
-
-
-            </div>
-            <div class="grid-row">
-              <a id="operator-continue-button" class="button button-start" href="./registration-recall" role="button">Update registration</a>
-            </div>
-
-
-          </fieldset>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-large">
+                Register a food business </h1>
         </div>
-      </form>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-one-third">
+            <h2 class="gem-c-contents-list__title">Contents</h2>
+            <p>
+                <ol class="gem-c-contents-list__list">
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed gem-c-contents-list__list-item--active"
+                        aria-current="true">—
+                        Overview
+                    </li>
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">—
+                        <a class="gem-c-contents-list__link " href="/self-assessment-tax-returns/sending-return">Register
+                            a new food business</a>
+                    </li>
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">—
+                        <a class="gem-c-contents-list__link " href="/self-assessment-tax-returns/deadlines">Update
+                            a food business</a>
+                    </li>
+                    <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed ">—
+                        <a class="gem-c-contents-list__link " href="/self-assessment-tax-returns/penalties">Close a
+                            food
+                            business</a>
+                    </li>Content table not done, can't find the correct styling/component - Maddie
+                </ol>
+            </p>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+            <h1 class="heading-medium">
+                Overview </h1>
+            <p>
+                All food businesses which regularly handle, produce or serve food to the public need to be registered
+                with
+                their Local Authority by law. They are also required to notify their local council of any significant
+                change to the business, including closing.</p>
+            </p>
+
+            <div class="panel panel-border-wide">
+                <p class="heading-small">
+                    During this registration, you may come across a few specialist terms, which we have described
+                    below:
+                </p>
+            </div>
+            <p class="heading-small">
+                Food business operator
+            </p>
+            <p>
+                The operator is the person, charity or company who makes the decisions about the food business, what it
+                serves and how it operates.
+            </p>
+            <p class="heading-small">
+                Establishment
+            </p>
+            <p>
+                The establishment is the location or site of your food business. If it is a mobile food business,
+                please use the location where it is normally stored overnight.
+            </p>
+            <p class="heading-medium">
+                Register a new food business
+            </p>
+            You are only required to <a class="link" href="../reg-pages/start.html">register a new food business</a>
+            <span class="bold-small">28
+                days</span> before they begin
+            trading. If you are already trading and have not registered you need to do so as soon as possible.
+            If you operate more than one premises, you need to register each of them with the local authority in which
+            they are located.
+            </p>
+
+            <p class="heading-medium">
+                Update a food business
+            </p>
+            You must <a class="link" href="./update-registration-start.html">update a food business</a> with any
+            significant changes within <span class="bold-small">28 days</span> of them happening.
+            </p>
+
+            <p class="heading-medium">
+                Close a food business
+            </p>
+            You must <a class="link" href="./close-start.html">close a food business</a> within<span class="bold-small">28
+                days</span> of it happening.
+            </p>
+
+
+            </fieldset>
+        </div>
+        </form>
 
 
     </div>
-  </div>
+    </div>
 </main>
 
 {% endblock %}
