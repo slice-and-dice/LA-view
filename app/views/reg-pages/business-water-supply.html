@@ -1,0 +1,91 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    <div> <a class="back-link" href="./index.html">Back</a> </div>
+
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+
+            <form>
+                <div class="form-group">
+                    <fieldset>
+
+                        <form>
+                            <div class="form-group">
+
+                                <fieldset>
+                                    <form>
+                                        <fieldset>
+
+                                            <legend>
+                                                <h1 class="heading-large">Does this establishment use a private water
+                                                    supply?</h1>
+                                            </legend>
+
+                                            <div class="form-group">
+                                                <details>
+                                                    <summary><span class="summary">What is an establishment?</span></summary>
+                                                    <div class="panel panel-border-narrow">
+                                                        <p class="label">An establishment is the location of your food
+                                                            business. If it is a mobile food business, please use the
+                                                            location where it is normally stored overnight.
+                                                            <p>
+                                                    </div>
+                                                </details>
+                                            </div>
+
+                                            <p class="form-hint">
+                                                It has a private water supply if it uses water that you take up from
+                                                the ground by itself. For example from a well.
+                                            </p>
+
+                                            <div class="multiple-choice">
+                                                <input id="waste-type-1" name="waste-types" type="radio" value="waste-animal">
+                                                <label for="waste-type-1">Yes, it uses a private water supply</label>
+                                            </div>
+
+                                            <div class="multiple-choice">
+                                                <input id="waste-type-2" name="waste-types" type="radio" value="waste-mines">
+                                                <label for="waste-type-2">No, it uses a public water supplier</label>
+                                            </div>
+
+
+
+                                        </fieldset>
+                                    </form>
+                            </div>
+
+                            <div class="big-gap"></div>
+
+                            <div class="form-group">
+                                <details>
+                                    <summary><span class="summary">I don't know if I have a private water supply</span></summary>
+                                    <div class="panel panel-border-narrow">
+                                        <p class="label">If you are
+                                            not registered with a water supply company or paying a bill for water, this
+                                            is an indication that your
+                                            water supply could be private. </p>
+
+                                    </div>
+                                </details>
+                            </div>
+                        </form>
+
+                        </diov>
+                        <div class="grid-row">
+                            <a id="operator-continue-button" class="button" href="./index" role="button">Save</a>
+                        </div>
+
+
+                    </fieldset>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
