@@ -1,0 +1,388 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+    <div> <a class="back-link" href="./index.html">Back</a> </div>
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+
+            <h1 class="heading-large">Opening hours</h1>
+            <p span class="form-hint">Fill in the expected opening times for this establishment</p>
+
+
+
+            <fieldset>
+                <legend>
+                    <span class="form-label-bold">
+                        Monday
+                    </span>
+                    <span class="form-hint">For example, 09:30 to 19:00</span>
+
+                </legend>
+                <div class="form-date" style="display: flex; margin-bottom: 30px;">
+                    <div class="form-group form-group-day" style="margin-right: 5px;">
+                        <label class="form-label" for="dob-day">Hour</label>
+                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0"
+                            max="24">
+
+                    </div>
+                    <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                        <span class="form-label">
+                            :
+                        </span>
+                    </div>
+
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="dob-month">Minute</label>
+                        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0"
+                            max="59">
+                    </div>
+                    <div style="display: flex; align-items: flex-end; margin-right: 20px;">
+                        <span class="form-label">
+                            to
+                        </span>
+                    </div>
+
+                    <div class="form-group form-group-day" style="margin-right: 5px;">
+                        <label class="form-label" for="dob-day">Hour</label>
+                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0"
+                            max="24">
+                    </div>
+                    <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                        <span class="form-label">
+                            :
+                        </span>
+                    </div>
+                    <div class="form-group form-group-month">
+                        <label class="form-label" for="dob-month">Minute</label>
+                        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0"
+                            max="59">
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <fieldset>
+            <legend>
+                <span class="form-label-bold">
+                    Tuesday
+                </span>
+                <span class="form-hint">For example, 09:30 to 19:00</span>
+
+            </legend>
+            <div class="form-date" style="display: flex; margin-bottom: 30px;">
+                <div class="form-group form-group-day" style="margin-right: 5px;">
+                    <label class="form-label" for="dob-day">Hour</label>
+                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+
+                </div>
+                <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                    <span class="form-label">
+                        :
+                    </span>
+                </div>
+
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="dob-month">Minute</label>
+                    <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0"
+                        max="59">
+                </div>
+                <div style="display: flex; align-items: flex-end; margin-right: 20px;">
+                    <span class="form-label">
+                        to
+                    </span>
+                </div>
+
+                <div class="form-group form-group-day" style="margin-right: 5px;">
+                    <label class="form-label" for="dob-day">Hour</label>
+                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+                </div>
+                <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                    <span class="form-label">
+                        :
+                    </span>
+                </div>
+                <div class="form-group form-group-month">
+                    <label class="form-label" for="dob-month">Minute</label>
+                    <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0"
+                        max="59">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <fieldset>
+        <legend>
+            <span class="form-label-bold">
+                Wednesday
+            </span>
+            <span class="form-hint">For example, 09:30 to 19:00</span>
+
+        </legend>
+        <div class="form-date" style="display: flex; margin-bottom: 30px;">
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 20px;">
+                <span class="form-label">
+                    to
+                </span>
+            </div>
+
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    <fieldset>
+        <legend>
+            <span class="form-label-bold">
+                Thursday
+            </span>
+            <span class="form-hint">For example, 09:30 to 19:00</span>
+
+        </legend>
+        <div class="form-date" style="display: flex; margin-bottom: 30px;">
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 20px;">
+                <span class="form-label">
+                    to
+                </span>
+            </div>
+
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    <fieldset>
+        <legend>
+            <span class="form-label-bold">
+                Friday
+            </span>
+            <span class="form-hint">For example, 09:30 to 19:00</span>
+
+        </legend>
+        <div class="form-date" style="display: flex; margin-bottom: 30px;">
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 20px;">
+                <span class="form-label">
+                    to
+                </span>
+            </div>
+
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    <fieldset>
+        <legend>
+            <span class="form-label-bold">
+                Saturday
+            </span>
+            <span class="form-hint">For example, 09:30 to 19:00</span>
+
+        </legend>
+        <div class="form-date" style="display: flex; margin-bottom: 30px;">
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 20px;">
+                <span class="form-label">
+                    to
+                </span>
+            </div>
+
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+        </div>
+    </fieldset>
+    </div>
+    <fieldset>
+        <legend>
+            <span class="form-label-bold">
+                Sunday
+            </span>
+            <span class="form-hint">For example, 09:30 to 19:00</span>
+
+        </legend>
+        <div class="form-date" style="display: flex; margin-bottom: 30px;">
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 20px;">
+                <span class="form-label">
+                    to
+                </span>
+            </div>
+
+            <div class="form-group form-group-day" style="margin-right: 5px;">
+                <label class="form-label" for="dob-day">Hour</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+            </div>
+            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+                <span class="form-label">
+                    :
+                </span>
+            </div>
+            <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Minute</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="59">
+            </div>
+        </div>
+    </fieldset>
+    </div>
+
+    <div class="form-group">
+        <details>
+
+            <summary><span class="summary">I don't know what the opening hours are</span></summary>
+            <div class="panel panel-border-narrow">
+                <p class="label">Opening hours are any time you are open to the public or producing food. If you
+                    don't
+                    know your opening hours, fill in your best estimation of what they are. If you are closed
+                    sometime
+                    during the day. For example your opening hours are 09:00 to 12:00 and 16:00 to 22:00. Please
+                    fill
+                    in the first start time and the last end time. For example 09:00 to 22:00.
+                    <p>
+            </div>
+        </details>
+    </div>
+
+
+
+
+
+
+
+    <div class="grid-row">
+        <a class="button" href="./index.html" role="button">Continue</a>
+    </div>
+
+
+
+
+    </details>
+    </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+</main>
+
+{% endblock %}
