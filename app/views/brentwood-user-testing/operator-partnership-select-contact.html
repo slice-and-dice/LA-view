@@ -1,0 +1,71 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="./index.html">Back</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="form-group">
+
+        <h1 class="heading-large">
+          Select the partner that will act as the main contact
+        </h1>
+
+        <div class="form-group">
+          <label class="form-hint" for="fbo-name">
+            <p>The selected partner will act as the main contact for the local council, but all partners are legally
+              responsible. Please use the contact details for the selected partner on the next page.</p>
+          </label>
+
+          <form>
+            <div class="form-group">
+
+              <div class="multiple-choice">
+                <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+                <label for="radio-1">Elizabeth Lemon
+                </label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+                <label for="radio-2">Leslie Knope
+                </label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+                <label for="radio-3">Abed Nadir
+                </label>
+              </div>
+              <div class="multiple-choice">
+                <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+                <label for="radio-3">Troy Barnes
+                </label>
+              </div>
+            </div>
+          </form>
+
+
+          <div class="grid-row">
+            <a id="operator-continue-button" class="button" href="./index" role="button">Continue</a>
+          </div>
+
+
+        </div>
+        </form>
+
+
+      </div>
+    </div>
+</main>
+
+
+<div class="grid-row">
+  <a id="operator-continue-button" class="button" href="./index" role="button">Continue</a>
+</div>
+
+</div>
+</div>
+
+</main>
+
+{% endblock %}
