@@ -1,253 +1,341 @@
-{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+{% extends "layout.html" %} {% block page_title %} Register a food business {%
+endblock %} {% block content %}
 
 <main id="content" role="main">
+  <div><a class="back-link" href="./opening-days-start.html">Back</a></div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <br />
+      <span class="progress-indicator">Section 2 of 3</span>
 
-    <div> <a class="back-link" href="./opening-days-start.html">Back</a> </div>
-    <div class="grid-row">
-        <div class="column-two-thirds">
+      <h1 class="heading-large" style="margin-top:5px">Opening hours</h1>
+      <p span class="form-hint">
+        Fill in the expected opening times for this establishment using 24 hour
+        clocks. For example 06:00 or 23:15.
+      </p>
 
-                <br>
-                <span class="progress-indicator">Section 2 of 3</span>
-
-            <h1 class="heading-large" style="margin-top:5px">Opening hours</h1>
-            <p span class="form-hint">Fill in the expected opening times for this establishment using 24 hour clocks. For example 06:00 or 23:15. </p>
-
-
-
-            <fieldset>
-                <legend>
-                    <span class="form-label-bold">
-                        Monday
-                    </span>
-                    <span class="form-hint">For example, 09:30 to 19:00</span>
-
-                </legend>
-               
-                <div class="form-date" style="display: flex; margin-bottom: 30px;">
-                    <div class="form-group form-group-year" style="margin-right: 5px;">
-                        <label class="form-label" for="dob-day">Opens</label>
-                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0"
-                            max="24">
-
-                    </div>
-
-                  
-                    <div style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px;">
-                        <span class="form-label">
-                            to
-                        </span>
-                    </div>
-
-                    <div class="form-group form-group-year" style="margin-right: 5px;">
-                        <label class="form-label" for="dob-day">Closes</label>
-                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0"
-                            max="24"> 
-                    </div>
-                    <div style="display: flex; align-items: flex-end; margin-right: 5px;">
-                        <span class="form-label">
-                            
-                        </span>
-                    </div>
-           
-                </div>
-            </fieldset>
-        <fieldset>
-            <legend>
-                <span class="form-label-bold">
-                    Tuesday
-                </span>
-                <span class="form-hint">For example, 09:30 to 19:00</span>
-
-            </legend>
-            <div class="form-date" style="display: flex; margin-bottom: 30px;">
-                <div class="form-group form-group-year" style="margin-right: 5px;">
-                    <label class="form-label" for="dob-day">Opens</label>
-                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="5">
-
-                </div>
-                
-
-                <div style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px">
-                    <span class="form-label">
-                        to
-                    </span>
-                </div>
-
-                <div class="form-group form-group-year" style="margin-right: 5px;">
-                    <label class="form-label" for="dob-day">Closes</label>
-                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
-                </div>
-            
-            <div style="display: flex; align-items: flex-end; margin-right: 5px;">
-                <span class="form-label">
-                    
-                </span>
-            </div>
-                
-            </div>
-        </fieldset>
-    <fieldset>
+      <fieldset>
         <legend>
-            <span class="form-label-bold">
-                Wednesday
-            </span>
-            <span class="form-hint">For example, 09:30 to 19:00</span>
-
+          <span class="form-label-bold"> Monday </span>
+          <span class="form-hint">For example, 09:30 to 19:00</span>
         </legend>
-        <div class="form-date" style="display: flex; margin-bottom: 30px;">
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                <label class="form-label" for="dob-day">Opens</label>
-                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
 
+        <div
+          class=""
+          style="display: flex; margin-bottom: 30px; margin-top: 8px;"
+        >
+          <div>
+            <label class="form-label" for="dob-day">Opens</label>
+            <div class="timeInput__container">
+              <input
+                type="text"
+                type="number"
+                class="form-control"
+                maxlength="2"
+                max="24"
+              />
+              <div class="timeInput__divider">:</div>
+              <input
+                type="text"
+                type="number"
+                class="form-control"
+                maxlength="2"
+              />
             </div>
+          </div>
 
-            <div style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px">
-                <span class="form-label">
-                    to
-                </span>
+          <div
+            style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px;"
+          >
+            <span class="form-label"> to </span>
+          </div>
+
+          <div>
+            <label class="form-label" for="dob-day">Closes</label>
+            <div class="timeInput__container">
+              <input
+                type="text"
+                type="number"
+                class="form-control"
+                maxlength="2"
+                max="24"
+              />
+              <div class="timeInput__divider">:</div>
+              <input
+                type="text"
+                type="number"
+                class="form-control"
+                maxlength="2"
+              />
             </div>
-
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                <label class="form-label" for="dob-day">Closes</label>
-                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
-            </div>
-
+          </div>
         </div>
-    </fieldset>
-    <fieldset>
+      </fieldset>
+      <fieldset>
         <legend>
-            <span class="form-label-bold">
-                Thursday
-            </span>
-            <span class="form-hint">For example, 09:30 to 19:00</span>
-
+          <span class="form-label-bold"> Tuesday </span>
+          <span class="form-hint">For example, 09:30 to 19:00</span>
         </legend>
         <div class="form-date" style="display: flex; margin-bottom: 30px;">
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                <label class="form-label" for="dob-day">Opens</label>
-                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Opens</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="5"
+            />
+          </div>
 
-            </div>
+          <div
+            style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px"
+          >
+            <span class="form-label"> to </span>
+          </div>
 
-            <div style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px">
-                    <span class="form-label">
-                    to
-                </span>
-            </div>
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Closes</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
 
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                    <label class="form-label" for="dob-day">Closes</label>
-                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
-            </div>
-
+          <div style="display: flex; align-items: flex-end; margin-right: 5px;">
+            <span class="form-label"> </span>
+          </div>
         </div>
-    </fieldset>
-    <fieldset>
+      </fieldset>
+      <fieldset>
         <legend>
-            <span class="form-label-bold">
-                Friday
-            </span>
-            <span class="form-hint">For example, 09:30 to 19:00</span>
-
+          <span class="form-label-bold"> Wednesday </span>
+          <span class="form-hint">For example, 09:30 to 19:00</span>
         </legend>
         <div class="form-date" style="display: flex; margin-bottom: 30px;">
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                <label class="form-label" for="dob-day">Opens</label>
-                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Opens</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
 
-            </div>
+          <div
+            style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px"
+          >
+            <span class="form-label"> to </span>
+          </div>
 
-            <div style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px">
-                    <span class="form-label">
-                    to
-                </span>
-            </div>
-
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                    <label class="form-label" for="dob-day">Closes</label>
-                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
-            </div>
-
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Closes</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
         </div>
-    </fieldset>
-    <fieldset>
+      </fieldset>
+      <fieldset>
         <legend>
-            <span class="form-label-bold">
-                Saturday
-            </span>
-            <span class="form-hint">For example, 09:30 to 19:00</span>
-
+          <span class="form-label-bold"> Thursday </span>
+          <span class="form-hint">For example, 09:30 to 19:00</span>
         </legend>
         <div class="form-date" style="display: flex; margin-bottom: 30px;">
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                <label class="form-label" for="dob-day">Opens</label>
-                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Opens</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
 
-            </div>
+          <div
+            style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px"
+          >
+            <span class="form-label"> to </span>
+          </div>
 
-            <div style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px">
-                    <span class="form-label">
-                    to
-                </span>
-            </div>
-
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                    <label class="form-label" for="dob-day">Closes</label>
-                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
-            </div>
-
-        </fieldset>
-    <fieldset>
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Closes</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
         <legend>
-            <span class="form-label-bold">
-                Sunday
-            </span>
-            <span class="form-hint">For example, 09:30 to 19:00</span>
-
+          <span class="form-label-bold"> Friday </span>
+          <span class="form-hint">For example, 09:30 to 19:00</span>
         </legend>
         <div class="form-date" style="display: flex; margin-bottom: 30px;">
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                <label class="form-label" for="dob-day">Opens</label>
-                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Opens</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
 
-            </div>
+          <div
+            style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px"
+          >
+            <span class="form-label"> to </span>
+          </div>
 
-            <div style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px">
-                    <span class="form-label">
-                    to
-                </span>
-            </div>
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Closes</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <span class="form-label-bold"> Saturday </span>
+          <span class="form-hint">For example, 09:30 to 19:00</span>
+        </legend>
+        <div class="form-date" style="display: flex; margin-bottom: 30px;">
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Opens</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
 
-            <div class="form-group form-group-year" style="margin-right: 5px;">
-                    <label class="form-label" for="dob-day">Closes</label>
-                    <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="24">
-            </div>
+          <div
+            style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px"
+          >
+            <span class="form-label"> to </span>
+          </div>
 
-    </fieldset>
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Closes</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <span class="form-label-bold"> Sunday </span>
+          <span class="form-hint">For example, 09:30 to 19:00</span>
+        </legend>
+        <div class="form-date" style="display: flex; margin-bottom: 30px;">
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Opens</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
 
-</div>
+          <div
+            style="display: flex; align-items: flex-end; margin-right: 20px; margin-left: 10px"
+          >
+            <span class="form-label"> to </span>
+          </div>
 
-    <div class="form-group">
-        <details>
+          <div class="form-group form-group-year" style="margin-right: 5px;">
+            <label class="form-label" for="dob-day">Closes</label>
+            <input
+              class="form-control"
+              id="dob-day"
+              name="dob-day"
+              type="number"
+              pattern="[0-9]*"
+              min="0"
+              max="24"
+            />
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
 
-            <summary><span class="summary">I don't know what my opening hours are</span></summary>
-            <div class="panel panel-border-narrow">
-                <p class="label">Opening hours are any time you are open to the public or producing food. If you
-                    don't
-                    know your opening hours, fill in your best estimation of what they are. If you are closed
-                    sometime
-                    during the day. For example your opening hours are 09:00 to 12:00 and 16:00 to 22:00. Please
-                    fill
-                    in the first start time and the last end time. For example 09:00 to 22:00.
-                    <p>
-            </div>
-        </details>
-            </div>
-            <div class="grid-row">
-                    <a class="button" href="./businesstype.html" role="button">Continue</a>
-                </div>
+  <div class="form-group">
+    <details>
+      <summary
+        ><span class="summary"
+          >I don't know what my opening hours are</span
+        ></summary
+      >
+      <div class="panel panel-border-narrow">
+        <p class="label">
+          Opening hours are any time you are open to the public or producing
+          food. If you don't know your opening hours, fill in your best
+          estimation of what they are. If you are closed sometime during the
+          day. For example your opening hours are 09:00 to 12:00 and 16:00 to
+          22:00. Please fill in the first start time and the last end time. For
+          example 09:00 to 22:00.
+        </p>
 
-
+        <p></p>
+      </div>
+    </details>
+  </div>
+  <div class="grid-row">
+    <a class="button" href="./businesstype.html" role="button">Continue</a>
+  </div>
 </main>
 
 {% endblock %}
