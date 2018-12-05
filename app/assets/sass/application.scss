@@ -52,6 +52,26 @@ $path: "/public/images/";
 	outline-width:2px;
 }
 
+.timeInput__container {
+  border: 2px solid black;
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  width: 70px;
+  justify-content: center;
+  input {
+    border: none;
+    text-align: center;
+    padding: 0px;
+    padding-top: 2px;
+    line-height: 19px;
+  }
+}
+
+.timeInput__divider {
+  margin: 0px;
+  z-index: 1000;
+}
 
 .heading-small-table{
 	font-size: 21px;
