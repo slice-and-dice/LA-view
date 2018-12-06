@@ -1,0 +1,59 @@
+{% extends "layout.html" %} {% block page_title %} Register a food business {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  <div> <a class="back-link" href="./operator-partnership-select-contact.html">Back</a> </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <br>
+      <span class="progress-indicator" style="margin-top:5px">Section 1 of 3</span>
+        
+      <h1 class="heading-large">Operator contact details</h1>
+
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">What is a food business operator</span></summary>
+          <div class="panel panel-border-narrow">
+            <p class="label"> A food business operator is the person, charity or company who makes the decisions about the food business, what it serves and how it operates.
+              <p>
+          </div>
+        </details>
+      </div>
+
+
+      <!--					Selectable list with form entry beneath and add more-->
+      <div class="list-item-wrapper-vertical">
+        <div class="grid-row">
+          <div class="form-group-compound">
+
+            <!--				  <div class="form-group contact-input-group">-->
+
+            <div class="form-group">
+              <label class="form-label" for="first-name-2">Main phone number</label>
+            <input class="form-control" name="contact-type" id="contact-type" type="numerical"> </div>
+
+            <div class="form-group">
+                <label class="form-label" for="first-name-2">Secondary phone number (optional)</label>
+              <input class="form-control" name="contact-type" id="contact-type" type="numerical"> </div>
+
+
+            <div class="form-group">
+              <label class="form-label" for="first-name-2">Email address</label>
+                <span class="form-hint">Your email address will be used to update you regarding policy or legal changes which could affect your food business.</span>
+              </label>
+              <input class="form-control" id="first-name-2" name="first-name-2" type="text">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="grid-row">
+          <a class="button" href="./operator-primaryauthority.html" role="button">Continue</a>
+        </div>
+
+
+</main>
+
+{% endblock %}
